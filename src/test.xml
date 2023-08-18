@@ -37,5 +37,10 @@
             <content><p> hello from content</p></content>
         </item>
 
+        <item>
+            <title>jk;l</title>
+            <description>FUCKING PLAIN TEXT </description>
+        </item>
+
     </channel>
 </rss> 
