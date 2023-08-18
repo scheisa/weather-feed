@@ -19,17 +19,16 @@ def gen_item():
             <img src='{conf.weather_avg_icon}'>\
             ]> </description>"
 
-    item_content = f"<content>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})\n\
-            General info:\n\
-            Date: {conf.date}\n\
-            {conf.weather_avg}\n\
-            Max tempreture: {conf.maxtemp_c}\n\
-            Min tempreture: {conf.mintemp_c}\n\
-            Avarege tempreture {conf.avgtemp_c}\n\
-            Average wind speed: {conf.maxwind_kph}\n\
-            </content>"
-    print(item_title)
-    print(item_description)
+    item_content = f"<description>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})\
+            <p><p>General info:</p>\
+            <p>Date: {conf.date}</p>\
+            <![CDATA[\ <img src='{conf.weather_avg_icon}'>\ ]>\
+            <p>{conf.weather_avg}</p>\
+            <p>Max tempreture: {conf.maxtemp_c}</p>\
+            <p>Min tempreture: {conf.mintemp_c}</p>\
+            <p>Avarege tempreture {conf.avgtemp_c}</p>\
+            <p>Average wind speed: {conf.maxwind_kph}</p></p>\
+            </description>"
     print(item_content)
 
 def main(response):
