@@ -4,8 +4,17 @@
             <link>https://www.w3schools.com</link>
             <title>Weather forecast for 2023-08-18</title>
 
-    <description>            <p><p>Weather forecast for 2023-08-18 in Konotop(Ukraine, Sums'ka Oblast')<\p>            <p>General info:</p>            <p>Date: 2023-08-18</p>
-       <![CDATA[<img src='cdn.weatherapi.com/weather/64x64/day/113.png'>]]>            <p>Sunny</p>            <p>Max tempreture: 28.2</p>            <p>Min tempreture: 16.
-5</p>            <p>Avarege tempreture 22.6</p>            <p>Average wind speed: 13.3</p></p>            </description>    </item>
-    </channel>
-</rss> 
+            <description>
+                            <p>Weather forecast for 2023-08-18 in Konotop(Ukraine, Sums'ka Oblast')</p>
+                            <p>General info:</p>
+                            <p>Date: 2023-08-18</p>
+                            <p>Sunny</p>
+                            <![CDATA[<img src='cdn.weatherapi.com/weather/64x64/day/113.png'>]]>
+                            <p>Max tempreture: 28.2</p>
+                            <p>Min tempreture: 16.5</p>
+                            <p>Avarege tempreture 22.6</p>
+                            <p>Average wind speed: 13.3</p>
+                    </description>
+                </item>
+            </channel>
+        </rss> 

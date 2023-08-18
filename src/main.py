@@ -20,7 +20,7 @@ def gen_item():
             ]> </description>"
 
     item_content = f"<description>\
-            <p><p>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})<\p>\
+            <p><p>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})</p>\
             <p>General info:</p>\
             <p>Date: {conf.date}</p>\
             <![CDATA[\ <img src='{conf.weather_avg_icon}'>\ ]>\
