@@ -2,7 +2,7 @@
     <channel>
         <title>Weather Forecast</title>
         <item>
-            <title>Weather forecast for 2023-08-18</title>
+            <title>WEATHER forecast for 2023-08-18</title>
             <description> 
             <![CDATA[
                 <p>Weather forecast for 2023-08-18 in Konotop(Ukraine, Sums'ka Oblast')</p>
@@ -16,31 +16,5 @@
                 <p>Average wind speed: 13.3</p>
             ]]>
             </description>
-        </item>
-
-        <item>
-            <title>ASDF</title>
-            <description> 
-                <p> Hello Feeder </p>
-            </description>
-        </item>
-
-        <item>
-            <title>asdf</title>
-            <description> 
-                <![CDATA[ <p> Hello from cdata </p> ]]>
-            </description>
-        </item>
-
-        <item>
-            <title>jk;l</title>
-            <content><p> hello from content</p></content>
-        </item>
-
-        <item>
-            <title>jk;l</title>
-            <description>FUCKING PLAIN TEXT </description>
-        </item>
-
     </channel>
 </rss> 
