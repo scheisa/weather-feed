@@ -2,8 +2,8 @@
     <channel>
         <title>Weather Forecast</title>
         <item>
-            <title>WEATHER FORECAST for 2023-08-18</title>
-            <link>https://scheisa.github.io/weather-feed/</link>
+            <title>WEATHER FOREcast for 2023-08-18</title>
+            <link>https://scheisa.github.io/weather-feed/test.xml</link>
             <description> 
             <![CDATA[
                 <p>Weather forecast for 2023-08-18 in Konotop(Ukraine, Sums'ka Oblast')</p>
