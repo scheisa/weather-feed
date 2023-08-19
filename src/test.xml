@@ -4,10 +4,10 @@
         <item>
             <title>WEATHER FOREcast for 2023-08-18</title>
             <link>https://scheisa.github.io/weather-feed/src/test.xml</link>
-<description>            <![CDATA[            <p>Weather forecast for 2023-08-19 in Konotop(Ukraine, Sums'ka Oblast')</p>            <p>General info:</p>            <p>Date: 2
-023-08-19</p>            <img src='https://cdn.weatherapi.com/weather/64x64/day/113.png'>            <p>Sunny</p>            <p>Max tempreture: 31.3</p>            <p>Min temp
-reture: 18.2</p>            <p>Avarege tempreture 24.8</p>            <p>Average wind speed: 12.6kph</p></p>            <br>           <p>Astrological data:</p>           <p>S
-unrise: 05:39 AM</p>           <p>Sunset: 08:02 PM</p>           <p>Moonrise: 08:33 AM</p>           <p>Moonset: 09:13 PM</p>           <p>Moon phase: Waxing Crescent</p>
-      ]]>            </description>        </item>
+               <description>            <![CDATA[            <p>Weather forecast for 2023-08-19 in Prague(Czech Republic, Hlavni mesto Praha)</p>            <p>General info:</p>            <
+p>Date: 2023-08-19</p>            <img src='https://cdn.weatherapi.com/weather/64x64/day/113.png'>            <p>Sunny</p>            <p>Max tempreture: 32.1</p>            <p
+>Min tempreture: 18.9</p>            <p>Avarege tempreture 25.6</p>            <p>Average wind speed: 7.9kph</p></p>            <br>           <p>Astrological data:</p>
+    <p>Sunrise: 05:57 AM</p>           <p>Sunset: 08:14 PM</p>           <p>Moonrise: 08:53 AM</p>           <p>Moonset: 09:28 PM</p>           <p>Moon phase: Waxing Crescent<
+/p>           ]]>            </description> </item>
     </channel>
 </rss> 

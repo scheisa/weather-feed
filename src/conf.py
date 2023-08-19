@@ -1,5 +1,6 @@
 api_key = "ab9e7b341c1a4143b03175931230908"
-url = "http://api.weatherapi.com/v1/forecast.json?key=ab9e7b341c1a4143b03175931230908&q=Konotop&days=1&aqi=yes&alerts=yes"
+city = "Prague"
+url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={city}&days=1&aqi=no&alerts=no"
 
 
 def define_data(data):
