@@ -38,6 +38,14 @@ def gen_item():
            <p>Moonset: {conf.moonset}</p>\
            <p>Moon phase: {conf.moon_phase}</p>\
            ]]>\
+           <br>\
+           <table>\
+           <tr>\
+           <td>Hello<td>\
+           <td>Feeder</td>\
+           <td>Hope this works</td>\
+           </tr>\
+           </table>\
             </description>"
     print(item_content)
 
