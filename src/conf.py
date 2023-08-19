@@ -65,7 +65,7 @@ def define_data(data):
     global hour_data
     hour_data = {}
     for i in range(len(main_hours)):
-        hour_data[f"{main_hours[i]['time']}"] = {
+        hour_data[f"{i}"] = {
             "time": main_hours[i]["time"],
             "temp_c": main_hours[i]["temp_c"],
             "feels_like": main_hours[i]["feelslike_c"],

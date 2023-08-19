@@ -37,15 +37,20 @@ def gen_item():
            <p>Moonrise: {conf.moonrise}</p>\
            <p>Moonset: {conf.moonset}</p>\
            <p>Moon phase: {conf.moon_phase}</p>\
-           ]]>\
            <br>\
            <table>\
            <tr>\
-           <td>Hello<td>\
-           <td>Feeder</td>\
-           <td>Hope this works</td>\
+           <td>&nbsp;</td>\
+           <td>{conf.hour_data['0']['time']}</td>\
+           <td>{conf.hour_data['1']['time']}</td>\
+           </tr>\
+           <tr>\
+           <td>Tempreture</td>\
+           <td>{conf.hour_data['0']['temp_c']}</td>\
+           <td>{conf.hour_data['1']['temp_c']}</td>\
            </tr>\
            </table>\
+           ]]>\
             </description>"
     print(item_content)
 
@@ -53,10 +58,10 @@ def main(response):
     data = response.json()
     conf.define_data(data)
 
-    # print(conf.hour_data)
     # print(list(conf.hour_data.values())[0])
     gen_item()
-    print(file_content)
+    print(conf.hour_data)
+    # print(file_content)
 
 response = requests.get(conf.url)
 
