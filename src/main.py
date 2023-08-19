@@ -20,15 +20,24 @@ def gen_item():
             ]> </description>"
 
     item_content = f"<description>\
-            <p><p>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})</p>\
+            <![CDATA[\
+            <p>Weather forecast for {conf.date} in {conf.city_name}({conf.country_name}, {conf.region_name})</p>\
             <p>General info:</p>\
             <p>Date: {conf.date}</p>\
-            <![CDATA[\ <img src='{conf.weather_avg_icon}'>\ ]>\
+            <img src='{conf.weather_avg_icon}'>\
             <p>{conf.weather_avg}</p>\
             <p>Max tempreture: {conf.maxtemp_c}</p>\
             <p>Min tempreture: {conf.mintemp_c}</p>\
             <p>Avarege tempreture {conf.avgtemp_c}</p>\
-            <p>Average wind speed: {conf.maxwind_kph}</p></p>\
+            <p>Average wind speed: {conf.maxwind_kph}kph</p></p>\
+            <br>\
+           <p>Astrological data:</p>\
+           <p>Sunrise: {conf.sunrise}</p>\
+           <p>Sunset: {conf.sunset}</p>\
+           <p>Moonrise: {conf.moonrise}</p>\
+           <p>Moonset: {conf.moonset}</p>\
+           <p>Moon phase: {conf.moon_phase}</p>\
+           ]]>\
             </description>"
     print(item_content)
 

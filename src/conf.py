@@ -40,7 +40,7 @@ def define_data(data):
     global weather_avg
     weather_avg = data["forecast"]["forecastday"][0]["day"]["condition"]["text"]
     global weather_avg_icon
-    weather_avg_icon = data["forecast"]["forecastday"][0]["day"]["condition"]["icon"].replace("//", "")
+    weather_avg_icon = data["forecast"]["forecastday"][0]["day"]["condition"]["icon"].replace("//", "https://")
 
     # astro
     global sunrise
@@ -69,7 +69,7 @@ def define_data(data):
             "temp_c": main_hours[i]["temp_c"],
             "feels_like": main_hours[i]["feelslike_c"],
             "desc": main_hours[i]["condition"]["text"],
-            "desc_icon": main_hours[i]["condition"]["icon"].replace("//", ""),
+            "desc_icon": main_hours[i]["condition"]["icon"].replace("//", "https://"),
             "wind_kph": main_hours[i]["wind_kph"],
             "wind_dir": main_hours[i]["wind_dir"],
             "will_it_rain": main_hours[i]["will_it_rain"],
