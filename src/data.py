@@ -1,8 +1,3 @@
-api_key = "ab9e7b341c1a4143b03175931230908"
-city = "Prague"
-url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={city}&days=1&aqi=no&alerts=no"
-
-
 def define_data(data):
     global last_updated
     last_updated = data["current"]["last_updated"]
@@ -66,7 +61,7 @@ def define_data(data):
     hour_data = {}
     for i in range(len(main_hours)):
         hour_data[f"{i}"] = {
-            "time": main_hours[i]["time"],
+            "time": main_hours[i]["time"].split()[1],
             "temp_c": main_hours[i]["temp_c"],
             "feels_like": main_hours[i]["feelslike_c"],
             "desc": main_hours[i]["condition"]["text"],
