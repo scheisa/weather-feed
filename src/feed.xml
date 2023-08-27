@@ -1,0 +1,27 @@
+<rss version='2.0'> <channel> <title>Weather Forecast</title>
+            <item>
+            <title>Weather forecast for 2023-08-27</title>
+            <description>
+            <![CDATA[
+            <p>Weather forecast for 2023-08-27 in Prague(Czech Republic, Hlavni mesto Praha)</p>
+            <p>General info:</p>
+            <p>Date: 2023-08-27</p>
+            <img src='https://cdn.weatherapi.com/weather/64x64/day/302.png'>
+            <p>Moderate rain</p>
+            <p>Max tempreture: 19.1C</p>
+            <p>Min tempreture: 14.5C</p>
+            <p>Avarege tempreture 17.2C</p>
+            <p>Average wind speed: 16.9kph</p></p>
+            <br>
+           <p>Astrological data:</p>
+           <p>Sunrise: 06:09 AM</p>
+           <p>Sunset: 07:58 PM</p>
+           <p>Moonrise: 06:28 PM</p>
+           <p>Moonset: 12:28 AM</p>
+           <p>Moon phase: Waxing Gibbous</p>
+           <br>
+           <p>Forecast for day</p>
+           <img src='https://hcti.io/v1/image/5e9692df-71c2-4758-94a1-4dc39d9d5114'>
+           ]]>
+            </description>
+            </item></channel> </rss>

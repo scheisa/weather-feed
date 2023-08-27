@@ -1,5 +1,5 @@
-import config
 import data
+import config
 import requests
 
   #<item>
@@ -14,7 +14,7 @@ def gen_table():
             <style>
             table {{
                 color: white;
-                background-color: grey;
+                background-color: black;
                 width: 100%;
                 border-collapse: collapse;
                 border: 1px solid;
@@ -137,6 +137,7 @@ def gen_table():
     
     image_req = requests.post(url = config.HCTI_API_ENDPOINT, data = table_data, auth=(config.HCTI_API_USER_ID, config.HCTI_API_KEY))
     global image
+    image = "asdf"
     image = image_req.json()["url"]
 
 
@@ -144,9 +145,11 @@ def gen_item():
     gen_table()
 
     item_title = f"<title>Weather forecast for {data.date}</title>"
-    item_link = f"<link>{0}</link>"
 
-    item_content = f"""<description>
+    item_content = f"""
+            <item>
+            {item_title}
+            <description>
             <![CDATA[
             <p>Weather forecast for {data.date} in {data.city_name}({data.country_name}, {data.region_name})</p>
             <p>General info:</p>
@@ -168,17 +171,24 @@ def gen_item():
            <p>Forecast for day</p>
            <img src='{image}'>
            ]]>
-            </description>"""
-    print(item_content)
+            </description>
+            </item>"""
+    return item_content
+
+def gen_feed():
+    rhs = "<rss version='2.0'> <channel> <title>Weather Forecast</title>"
+    lhs = "</channel> </rss>"
+
+    mid = gen_item()
+
+    with open("feed.xml", "+w") as file:
+        file.write(f"{rhs}{mid}{lhs}")
 
 def main(response):
     response = response.json()
     data.define_data(response)
 
-    # print(list(config.hour_data.values())[0])
-    gen_item()
-    # print(data.hour_data)
-    # print(file_content)
+    gen_feed()
 
 response = requests.get(config.url)
 
